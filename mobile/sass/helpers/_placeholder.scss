@@ -1,0 +1,45 @@
+@charset "UTF-8";
+// 清除浮动
+%clearfix{
+    zoom:1;
+    &:after{
+        content:".";
+        height:0;
+        visibility:hidden;
+        display:block;
+        clear:both;
+        font-size:0;
+        line-height:0;
+    }
+}
+
+// flex
+%flexbox{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
+}
+
+// 灵活的项目将垂直显示
+%flexboxColumn{
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;        /* column, row-reverse, column-reverse */
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+//horizontalCenter
+%horizontalCenter{
+    box-align: center;
+    justify-content: center;
+}
+//verticalCenter
+%verticalCenter{
+    box-pack: center;
+    align-items: center;
+}

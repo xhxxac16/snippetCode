@@ -1,0 +1,12 @@
+/* extend */
+
+//$common:sprite-map("common/*.png", $spacing:5px, $layout: diagonal);
+//pages skin
+$skinCommon: sprite-map("skin/*.png", $spacing:5px);
+%commonMaps{
+	$width: sprite-width($skinCommon);
+	$height: sprite-height($skinCommon);
+	background-image: $skinCommon;
+	background-repeat: no-repeat;
+	background-size: rem-calc($width $height);
+}

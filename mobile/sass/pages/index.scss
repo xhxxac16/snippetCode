@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/**
+ * Author:   Amanda
+ * Create Date:     2016-9-19
+ * Modifty Date:     2016-9-19
+ * Description:
+ */
+@import "../base/common";
+@import "../base/extend";
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: map-get($cxGlobal, 'color-txt-9');
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: map-get($cxGlobal, 'color-txt-9');
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: map-get($cxGlobal, 'color-txt-9');
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: map-get($cxGlobal, 'color-txt-9');
+}
+[placeholder]:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+[placeholder]:focus::-moz-placeholder {
+  opacity: 0;
+}
+input{
+    font-family: Arial,'Neue Helvetica',"microsoft yahei";
+}
+html{
+	height:100%;
+	body{
+		position: relative;
+		background: map-get($cxGlobal,'color-bg');
+		min-height: 100%;
+		font-family: "PingFang SC", "Heiti SC", "SF UI Text", "Helvetica Neue", Roboto, "Droid Sans Fallback", arial, sans-serif;
+	}
+            a{
+                text-decoration: none;
+            }
+
+
+}

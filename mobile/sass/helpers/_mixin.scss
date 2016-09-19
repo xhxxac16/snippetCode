@@ -1,0 +1,100 @@
+@charset "UTF-8";
+$lte7:true !default;//ie6,7
+
+// inline-block
+@mixin inline-block{
+  display: inline-block;
+  @if $lte7 {
+    *display:inline;
+    zoom:1;
+  }
+}
+
+$enable-unit-rem: true !default;
+$enable-unit-vw: false !default;
+
+@mixin vw-content{
+  @if $enable-unit-vw {
+    @content;
+  }
+}
+
+@mixin unit-calc($property, $values...) {
+  $max: length($values);
+  $pxValues: '';
+  $remValues: '';
+  $vwValues: '';
+  $status: ($enable-unit-rem or $enable-unit-vw);
+  @for $i from 1 through $max {
+    $item: nth($values, $i);
+    @if ((type-of($item) == "number") and status) {
+      $unit: to-lower-case(unit($item));
+      @if $unit == "px" {
+        $value: strip-unit($item);
+        @if $enable-unit-rem {
+          $remValues: #{$remValues + rem-calc($value)};
+        }
+        @if $enable-unit-vw {
+          $vwValues: #{$vwValues + vw-calc($value)};
+        }
+      }
+      @else {
+        @if $enable-unit-rem {
+          $remValues: #{$remValues + $item};
+        }
+        @if $enable-unit-vw {
+          $vwValues: #{$vwValues + $item};
+        }
+      }
+    }
+    @else {
+      @if $enable-unit-rem {
+        $remValues: #{$remValues + $item};
+      }
+      @if $enable-unit-vw {
+        $vwValues: #{$vwValues + $item};
+      }
+      @if $status == false {
+        $pxValues: #{$pxValues + $item};
+      }
+    }
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+      $vwValues: #{$vwValues + " "};
+      @if $status == false {
+        $pxValues: #{$pxValues + " "};
+      }
+    }
+  }
+  @if $enable-unit-rem {
+    #{$property}: $remValues;
+  }
+  @if $enable-unit-vw {
+    #{$property}: $vwValues;
+  }
+  @if $status == false {
+    #{$property}: $pxValues;
+  }
+}
+
+//ellipsis
+@mixin ellipsis($line){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @if ($line == 1) {
+        white-space: nowrap;
+    }@else{
+        display: -webkit-box;
+        -webkit-line-clamp: $line;
+        -webkit-box-orient: vertical;
+    }
+}
+
+// gradient
+@mixin gra($begin,$end){
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($begin), to($end));
+  background-image: -webkit-linear-gradient(top, $begin, $end);
+  background-image:    -moz-linear-gradient(top, $begin, $end);
+  background-image:      -o-linear-gradient(top, $begin, $end);
+  background-image:         linear-gradient(top, $begin, $end);
+}

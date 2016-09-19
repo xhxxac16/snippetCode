@@ -1,0 +1,17 @@
+@charset "UTF-8";
+// Author:Amanda Description: 基本设置
+// 图片路径
+$imgurl-base: "/images";
+$lte7: false;
+// rem-calc的基础值
+$rem-base: 100px;
+$enable-unit-vw: false;
+$vm-base:750px;
+// 全局设置 map-get($cxGlobal,'color-bg');
+$cxGlobal: (
+	'color-bg': #eff2f7, //页面背景色
+	'color-main': #c71445, //主色调红色
+	'color-txt-3': #333, //主体字体色
+	'color-txt-6': #666, //弱一点的字体色
+	'color-txt-9': #999, //more的字体色
+);

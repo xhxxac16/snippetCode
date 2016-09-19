@@ -1,0 +1,34 @@
+@charset "UTF-8";
+// 一行高度
+%ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+// 两行高度
+%ellipsis2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+
+@mixin ellipsis($line){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @if ($line == 1) {
+        white-space: nowrap;
+    }@else{
+        display: -webkit-box;
+        -webkit-line-clamp: $line;
+        -webkit-box-orient: vertical;
+    }
+}
+
+// eg.
+.height{
+  @include ellipsis(2);
+}

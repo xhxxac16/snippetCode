@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.item-list-box{
+        height: 100%;
+        width: 100%;
+         background: #fff;
+        // 系统自带的滚动；
+        overflow: hidden;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        overflow-scrolling: touch;
+    }

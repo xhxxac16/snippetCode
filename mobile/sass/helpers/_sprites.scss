@@ -1,4 +1,4 @@
-@mixin iconItem($imgUrl:$skinCommon, $name, $extend:commonMaps, $spacing:2, $spacing_w:2){
+@mixin iconItem($imgUrl, $name, $extend:commonMaps, $spacing:2, $spacing_w:2){
   $width:image-width(sprite-file($imgUrl, $name));//$name's width
   $height:image-height(sprite-file($imgUrl, $name));//$name's height
   width:rem-calc($width + $spacing);
@@ -7,12 +7,12 @@
   @extend %#{$extend};
 }
 
-@mixin iconItemNoSize($imgUrl:$skinCommon, $name, $extend:commonMaps){
+@mixin iconItemNoSize($imgUrl, $name, $extend:commonMaps){
  background-position:rem-calc(sprite-position($imgUrl, $name));//location
   @extend %#{$extend};
 }
 
-@mixin iconItemPos($imgUrl:$skinCommon, $name){
+@mixin iconItemPos($imgUrl, $name){
   background-position:rem-calc(sprite-position($imgUrl, $name));
 }
 

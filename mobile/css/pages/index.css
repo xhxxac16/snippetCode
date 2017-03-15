@@ -50,16 +50,14 @@ html {
 /* line 34, ../../sass/pages/index.scss */
 html body {
   position: relative;
-  background: #eff2f7;
   min-height: 100%;
-  font-family: "PingFang SC", "Heiti SC", "SF UI Text", "Helvetica Neue", Roboto, "Droid Sans Fallback", arial, sans-serif;
 }
-/* line 40, ../../sass/pages/index.scss */
+/* line 38, ../../sass/pages/index.scss */
 html a {
   text-decoration: none;
 }
 
-/* line 49, ../../sass/pages/index.scss */
+/* line 45, ../../sass/pages/index.scss */
 .error {
   background-repeat: no-repeat;
   background-image: url('/images/_icon-se1df29bada.png');

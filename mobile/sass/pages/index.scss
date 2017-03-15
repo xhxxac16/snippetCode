@@ -33,15 +33,11 @@ html{
 	height:100%;
 	body{
 		position: relative;
-		background: map-get($cxGlobal,'color-bg');
 		min-height: 100%;
-		font-family: "PingFang SC", "Heiti SC", "SF UI Text", "Helvetica Neue", Roboto, "Droid Sans Fallback", arial, sans-serif;
 	}
             a{
                 text-decoration: none;
             }
-
-
 }
 
 

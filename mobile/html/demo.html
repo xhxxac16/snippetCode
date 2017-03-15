@@ -19,6 +19,28 @@
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="../css/pages/index.css">
+    <script>
+        (function (doc, win) {
+            var docEle = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEle.clientWidth;
+                        if (!clientWidth) return;
+                    var fontSize = 100,
+                        pageW = 750;
+                        wk = 750;
+                        if (docEle.clientWidth <= wk) {
+                            docEle.style.fontSize = docEle.clientWidth / pageW * fontSize + "px";
+                        } else {
+                            docEle.style.fontSize = wk / pageW * fontSize + "px";
+                        }
+                };
+
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                doc.addEventListener('DOMContentLoaded', recalc, false);
+            })(document, window);
+    </script>
     <script src="../js/tips.js"></script>
 </head>
 <body>

@@ -5,8 +5,7 @@ $imgurl-base: "/images";
 $lte7: false;
 // rem-calc的基础值
 $rem-base: 100px;
-$enable-unit-vw: false;
-$vm-base:750px;
+$max-breakpoint: 750;
 // 全局设置 map-get($cxGlobal,'color-bg');
 $cxGlobal: (
 	'color-bg': #eff2f7, //页面背景色
@@ -15,3 +14,38 @@ $cxGlobal: (
 	'color-txt-6': #666, //弱一点的字体色
 	'color-txt-9': #999, //more的字体色
 );
+$font-family-map:(
+    font1: "PingFang SC",
+    font2: "Heiti SC",
+    font3: "SF UI Text",
+    font4: "Helvetica Neue",
+    font5: Roboto,
+    font6: Droid Sans Fallback,
+    font7: arial,
+    font8: sans-serif
+);
+
+$mediaArray: "only screen",
+    "only screen and (min-width: 320px) and (max-width: 359px)",
+    "only screen and (min-width: 360px) and (max-width: 399px)",
+    "only screen and (min-width: 400px) and (max-width: 479px)",
+    "only screen and (min-width: 480px) and (max-width: 639px)",
+    "only screen and (min-width: 640px) and (max-width: 749px)",
+    "only screen and (min-width: 750px)";
+
+$ratioFor300: $max-breakpoint/300;
+$ratioFor320: $max-breakpoint/320;
+$ratioFor360: $max-breakpoint/360;
+$ratioFor400: $max-breakpoint/400;
+$ratioFor480: $max-breakpoint/480;
+$ratioFor640: $max-breakpoint/640;
+$ratioFor750: $max-breakpoint/750;
+
+$htmSizeArray: floor($rem-base/$ratioFor300),
+               floor($rem-base/$ratioFor320),
+               floor($rem-base/$ratioFor360),
+               floor($rem-base/$ratioFor400),
+               floor($rem-base/$ratioFor480),
+               floor($rem-base/$ratioFor640),
+               floor($rem-base/$ratioFor750);
+

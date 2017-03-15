@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/**
+ * Author:   Amanda
+ * Create Date:     2017-3-15
+ * Modifty Date:     2017-3-15
+ * Description: 重置默认浏览器的样式,设置基础的样式
+ */
+@import "../base/common";
+@import "../helpers/reset";
+
+@for $mediaIndex from 1 to length($mediaArray) + 1 {
+    $media: nth($mediaArray, $mediaIndex);
+    $htmlFz: nth($htmSizeArray, $mediaIndex);
+    @media #{$media}
+    {
+        html {
+            font-size: $htmlFz;
+        }
+    }
+}

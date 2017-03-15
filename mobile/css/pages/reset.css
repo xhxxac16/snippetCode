@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/**
+ * Author:   Amanda
+ * Create Date:     2017-3-15
+ * Modifty Date:     2017-3-15
+ * Description: 重置默认浏览器的样式,设置基础的样式
+ */
+/* line 2, ../../sass/helpers/_reset.scss */
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* line 7, ../../sass/helpers/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../../sass/helpers/_reset.scss */
+*:not(input, textarea) {
+  -webkit-touch-callout: inherit;
+  -webkit-user-select: auto;
+}
+
+/* line 14, ../../sass/helpers/_reset.scss */
+body {
+  width: 100%;
+  color: #333;
+  font-family: "PingFang SC", "Heiti SC", "SF UI Text", "Helvetica Neue", Roboto, Droid Sans Fallback, arial, sans-serif;
+  -webkit-touch-callout: inherit;
+  /*value:none input is not insert*/
+  -webkit-user-select: auto;
+  /*value:none input is not insert*/
+  background-color: #eff2f7;
+}
+
+/* line 23, ../../sass/helpers/_reset.scss */
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 27, ../../sass/helpers/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 30, ../../sass/helpers/_reset.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* line 36, ../../sass/helpers/_reset.scss */
+textarea, input {
+  resize: none;
+  outline: none;
+}
+
+/* line 40, ../../sass/helpers/_reset.scss */
+textarea {
+  resize: none;
+  -webkit-appearance: none;
+}
+
+/* line 44, ../../sass/helpers/_reset.scss */
+ul, ol, li {
+  list-style: none;
+}
+
+/* line 47, ../../sass/helpers/_reset.scss */
+em {
+  font-style: normal;
+}
+
+/* line 50, ../../sass/helpers/_reset.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 52, ../../sass/helpers/_reset.scss */
+.clearfix:before {
+  content: "";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+/* line 62, ../../sass/helpers/_reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 66, ../../sass/helpers/_reset.scss */
+a, img {
+  -webkit-touch-callout: none;
+  /*禁止长按链接与图片弹出菜单*/
+}
+
+/* line 69, ../../sass/helpers/_reset.scss */
+html, body {
+  -webkit-user-select: none;
+  /*禁止选中文本(如无文本选中需求，此为必选项)*/
+  user-select: none;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media only screen {
+  /* line 16, ../../sass/pages/reset.scss */
+  html {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  /* line 16, ../../sass/pages/reset.scss */
+  html {
+    font-size: 42px;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 399px) {
+  /* line 16, ../../sass/pages/reset.scss */
+  html {
+    font-size: 48px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 479px) {
+  /* line 16, ../../sass/pages/reset.scss */
+  html {
+    font-size: 53px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+  /* line 16, ../../sass/pages/reset.scss */
+  html {
+    font-size: 64px;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 749px) {
+  /* line 16, ../../sass/pages/reset.scss */
+  html {
+    font-size: 85px;
+  }
+}
+@media only screen and (min-width: 750px) {
+  /* line 16, ../../sass/pages/reset.scss */
+  html {
+    font-size: 100px;
+  }
+}

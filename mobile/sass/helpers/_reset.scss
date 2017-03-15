@@ -13,11 +13,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 body {
   width: 100%;
-  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-  color: #229cdd;
+  font-family: map-get($cxGlobal,'font-family');
+  color: map-get($cxGlobal,'color-txt-3');
+  font-family: map-values($font-family-map);
   -webkit-touch-callout: inherit ;/*value:none input is not insert*/
   -webkit-user-select: auto ;/*value:none input is not insert*/
-  background-color: #000;
+  background-color: map-get($cxGlobal,'color-bg');
 }
 a {
   text-decoration: none;

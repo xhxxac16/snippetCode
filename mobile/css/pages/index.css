@@ -1,0 +1,70 @@
+/**
+ * Author:   Amanda
+ * Create Date:     2016-9-19
+ * Modifty Date:     2016-9-19
+ * Description:
+ */
+/* line 10, ../../sass/pages/index.scss */
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #999;
+}
+
+/* line 13, ../../sass/pages/index.scss */
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999;
+}
+
+/* line 16, ../../sass/pages/index.scss */
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+}
+
+/* line 19, ../../sass/pages/index.scss */
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #999;
+}
+
+/* line 22, ../../sass/pages/index.scss */
+[placeholder]:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+/* line 26, ../../sass/pages/index.scss */
+[placeholder]:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+/* line 29, ../../sass/pages/index.scss */
+input {
+  font-family: Arial,'Neue Helvetica',"microsoft yahei";
+}
+
+/* line 32, ../../sass/pages/index.scss */
+html {
+  height: 100%;
+}
+/* line 34, ../../sass/pages/index.scss */
+html body {
+  position: relative;
+  background: #eff2f7;
+  min-height: 100%;
+  font-family: "PingFang SC", "Heiti SC", "SF UI Text", "Helvetica Neue", Roboto, "Droid Sans Fallback", arial, sans-serif;
+}
+/* line 40, ../../sass/pages/index.scss */
+html a {
+  text-decoration: none;
+}
+
+/* line 49, ../../sass/pages/index.scss */
+.error {
+  background-repeat: no-repeat;
+  background-image: url('/images/_icon-se1df29bada.png');
+  width: 0.28rem;
+  height: 0.28rem;
+  background-position: 0 100%;
+  background-size: 0.64rem 1.64rem;
+}

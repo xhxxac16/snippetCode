@@ -1,0 +1,10 @@
+/* line 2, ../../sass/demo/scrolling.scss */
+.item-list-box {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}

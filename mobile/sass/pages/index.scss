@@ -6,7 +6,6 @@
  * Description:
  */
 @import "../base/common";
-@import "../base/extend";
 
 ::-webkit-input-placeholder { /* WebKit browsers */
   color: map-get($cxGlobal, 'color-txt-9');
@@ -43,4 +42,10 @@ html{
             }
 
 
+}
+
+
+$skin:creatSprite("_icon/*.png");
+.error{
+  @include iconItemRem($skin,"icon-error");
 }

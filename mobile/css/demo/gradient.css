@@ -1,0 +1,10 @@
+/* line 2, ../../sass/demo/gradient.scss */
+.masking-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 327px;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), white 100%);
+  z-index: 1;
+}

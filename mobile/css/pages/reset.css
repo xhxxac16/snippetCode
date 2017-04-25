@@ -39,6 +39,7 @@ body {
 a {
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
+  /*ios android去除自带阴影的样式*/
 }
 
 /* line 27, ../../sass/helpers/_reset.scss */

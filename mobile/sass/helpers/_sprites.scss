@@ -27,7 +27,7 @@
       background-size: rem-calc($spriteWidth) rem-calc($spriteHeight);
     } @else {
       width: $iconWidth;
-      height: $iconWidth;
+      height: $iconHeight;
       background-position: $iconPosXInSprite $iconPosYInSprite;
     }
 }
